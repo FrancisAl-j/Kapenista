@@ -1,0 +1,564 @@
+* {
+    scroll-behavior: smooth;
+}
+/* CSS for honepage */
+.container-content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.container-content > div {
+    flex: 1 1 calc(992px / 2);
+}
+.content-img {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.container-title {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.container-text {
+    padding: 1.25rem;
+    background: #fff;
+}
+.container-text p {
+    font-size: 23px;
+}
+.sub-title {
+    font-size: 35px;
+    margin: 2rem 0;
+}
+.images {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(228px, 2fr));
+}
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* The code above is the css for sticky image behaviour while scrolling down*/
+
+
+/* CSS for map */
+.map {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0 0 353px 0;
+}
+
+
+
+/* about us */
+.about-container {
+    width: 100%;
+    height: 100vh;
+    background: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 0 353px 0;
+    box-shadow: 0 8px rgb(0 0 0 / 20%);
+}
+.flex-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    gap: 5px;
+}
+.box {
+    max-width: 650px;
+    width: 650px;
+    height: 550px;
+}
+.box1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+.box2 {
+    background-color: transparent;
+}
+.coffee {
+    height: 550px;
+    width: min(100% - 2px, 650px);
+    position: absolute;
+    border-radius: 25px;
+
+    /* The comment below is just a reminder for me how to do an animation using CSS */
+
+    /*-webkit-transform: translateX(0px);
+    -webkit-animation: float 6s ease-out infinite;
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;*/
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+.box2 h1 {
+    text-transform: capitalize;
+    font-size: 1.5625rem;
+    font-size: clamp(1.5625rem, 0.625rem + 2.142857142857143vw, 2.5rem);
+    font-weight: 300;
+    margin: 25px;
+}
+.box2 p {
+    margin: 10px;
+    font-size: 19px; /* 25px - */
+    color: #000;
+}
+.about-button {
+    font-size: 15px; /* 20px - */
+    text-transform: uppercase;
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: 1px #DB975F solid;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 150px 0 0 10px;
+    display: block;
+    color: #000;
+}
+.about-button:hover {
+    background-color: #DB975F;
+    color: #fff;
+}
+.about-background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/aboutus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.about-background h1 {
+    font-size: 60px;
+    color: brown;
+    text-transform: uppercase;
+}
+
+
+
+
+/* CSS for menu */
+.menu-page {
+    /*width: min(100% - 5px, 1400px);*/
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20;
+}
+.menu-page h2 {
+    font-size: 1.875rem;
+    font-size: clamp(1.875rem, 0.9375rem + 2.142857142857143vw, 2.8125rem);
+    font-family: 'Playfair Display';
+    text-transform: capitalize;
+    margin: 20px 0 35px 0;
+}
+.menu-container {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgg {
+    width: min(100% - 1px, 300px);
+    aspect-ratio: 3/4;
+    margin: auto;
+    position: relative;
+}
+.menu-img {
+    width: inherit;
+    height: inherit;
+    aspect-ratio: 3/4;
+    position: absolute;
+}
+.menu-img:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 10px 9px 63px 8px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 9px 63px 8px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 9px 63px 8px rgba(0,0,0,0.75);
+}
+.menus {
+    width: min(100% - 1px, 300px);
+    aspect-ratio: 3/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 1px solid #000;
+}
+.shop-now {
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.5rem + 0.5714285714285714vw, 1rem);
+    display: block;
+    font-family: 'Raleway';
+    font-weight: 500px;
+    cursor: pointer;
+    margin: 15px;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    border-radius: 50px;
+    border: 2px solid #DB975F;
+    background-color: transparent;
+}
+.shop-now:hover {
+    background: #DB975F;
+    color: #fff;
+}
+.menus p {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.625rem + 0.8571428571428572vw, 1.375rem);
+    margin: 25px 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-info {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/about-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.container {
+    width: min(100% - 2px, 95%);
+    height: 90vh;
+    background: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info {
+    width: min(100% - 1px, 700px);
+    height: 100%;
+    background: blue;
+}
+.info img {
+    width: min(100% - 1px, 700px);
+    height: 100%;
+}
+
+
+/* CSS for Contact Us */
+.contact-wrapper {
+    height: auto;
+    width: 100%;
+    background-color: #F1ECEA;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: 0 0 353px 0;
+    box-shadow: 0 8px rgb(0 0 0 / 20%);
+}
+.contact-container {
+    height: 97%;
+    width: min(100% - 20px, 95%);
+    background-color: transparent;
+}
+.contact-flex {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*box-shadow: 0 5px rgb(0 0 0 / 20%);*/
+}
+.flex {
+    height: auto;
+    width: min(100% - 10px, 600px);
+}
+.bgimg {
+    width: min(100% - 10px, 600px);
+    /*aspect-ratio: 5/6;*/
+    height: 700px;
+    border-radius: 40px;
+}
+.flex h1 {
+    font-family: 'Playfair Display';
+    text-transform: capitalize;
+    border-bottom: 2px solid #000;
+    font-size: 1.75rem;
+    font-size: clamp(1.75rem, 0.6875rem + 2.4285714285714284vw, 2.8125rem);
+}
+.flex p {
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 0.6875rem + 1vw, 1.5625rem);
+    font-family: 'Raleway';
+    line-height: 29px;
+    margin: 10px 0 20px 0;
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.info p {
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.625rem + 0.5714285714285714vw, 1.125rem); 
+    font-family: 'Raleway';
+}
+.info-icon {
+    font-size: 20px;
+}
+.form-container {
+    width: min(100% - 15px, 500px);
+    aspect-ratio: 3/2;
+}
+.form-element > label, input {
+    display: block;
+}
+.form-element label {
+    text-transform: capitalize;
+    font-family: 'Playfair Display';
+    font-size: 1.125rem;
+    font-size: clamp(1.125rem, 0.8125rem + 0.7142857142857143vw, 1.4375rem);
+}
+.form-element input {
+    width: min(100% - 10px, 403px);
+    height: 42px;
+    border-radius: 4px;
+    padding-left: 10px;
+    color: #000;
+}
+input[type=submit] {
+    text-transform: uppercase;
+    margin: 15px 0 20px 0;
+    height: 34px;
+    width: min(100% - 2px, 186px);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 2px solid #DB975F;
+    background-color: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background: #DB975F;
+    color: #fff;
+}
+
+textarea {
+    resize: none;
+    width: min(100% - 10px, 362px);
+    height: 165px;
+    border-radius: 4px;
+    padding: 10px 0 0 10px;
+}
+
+/* CSS for footer */
+.footer {
+    width: 100%;
+    position: fixed;
+    height: 328px;
+    bottom: 0;
+    z-index: -1;
+    background: #fff;
+}
+.footer-flex {
+    width: 100%;
+    height: 131px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    box-shadow: 0 8px rgb(0 0 0 / 20%);
+}
+.socmed-icons i {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #000;
+}
+.socmed-icons i:first-child:hover  {
+    color: blue;
+}
+.socmed-icons {
+    padding-right: 35px;
+}
+
+/* Animation on scroll */
+.animate {
+    transform: translateX(400%);
+    transform: transform 0.4s ease;
+}
+.animate {
+    transform: translateX(-400%);
+}
+.animate.show {
+    transform: translateX(0);
+}
+.contact-background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/contact-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Responsive CSS for sticky image while on scroll */
+@media screen and (max-width: 991px) {
+    .content-img {
+        position: static;
+    }
+    .container-content {
+        flex-direction: row-reverse;
+    } 
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .about-container {
+        height: auto;
+    }
+    .box {
+        width: min(100% - 5px, 500px);
+        height: 350px;
+    }
+    .box1 {
+        display: none;
+    }
+    .box2 {
+        background-image: url('/img/aboutUs-coffee.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .about {
+        height: 10vh;
+    }
+    .about h1 {
+        font-size: 30px;
+        position: absolute;
+        text-transform: uppercase;
+    }
+    .about-button {
+        margin-top: 15px;
+        padding: 5px 20px;
+    }
+    .flex2 {
+        display: none;
+    }
+    .flex1 {
+        background: url('/img/coffeebg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: #000;
+    }
+    .border {
+        width: 98%;
+        height: auto;
+        background-color: rgba(230,230,230, 0.4); /* Black w/opacity/see-through */
+        margin: auto;
+    }
+    .shop-now {
+        padding: 10px 20px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+    }
+    .menus {
+        width: min(100% - 10px, 400px);
+    }
+    .imgg {
+        width: min(100% - 10px, 400px);
+    }
+    .form-element input {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }
+
+    .footer-flex {
+        flex-direction: column;
+        height: 300px;
+    }
+    
+    .socmed-icons {
+        margin: 10px;
+    }
+
+    .contact-wrapper {
+        margin: 0 0 750px 0;
+    }
+    .footer {
+        height: 700px;
+    }
+    .box2 p {
+        color: #000;
+    }
+    .about-button {
+        color: #000;
+    }
+    .box2 h1 {
+        color: #000;
+    }
+
+
+    /* Homepage responsive css */
+    .container-content {
+        flex-direction: column;
+    } 
+    .images img {
+        height: 300px;
+        aspect-ratio: 1/3;
+    }
+}

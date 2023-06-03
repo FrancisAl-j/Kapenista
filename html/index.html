@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/nav.css">
+
+    <script src="https://kit.fontawesome.com/ec753d40db.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container"><a href="#"><img src="/img/final-logo.png" class="logo menu-logo"></a></div>
+        <nav class="navbar">
+            <ul class="menu">
+                <i class="close fa-regular fa-x button"></i>
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="about.html">About Us</a></li>
+                <li class="menu-item"><a href="menu.html">Menus</a></li>
+                <li class="menu-item"><a href="Shop.html">Shop</a></li>
+                <li class="menu-item"><a href="contact.html">Contact us</a></li>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </ul>
+        </nav>
+        <i class="menu-btn fa-solid fa-bars button"></i>
+    </header>
+
+    <div class="bg-slider" id="home">
+        <div class="slider fade" style="display: block;">
+            <div class="txt">
+                <h1 class="bg-title">Kapenista</h1>
+                <p class="bg-sentence">A cup of coffee shared with a friend is happiness tasted and time well spent</p>
+            </div>  <!-- txt closing -->
+            <img src="/img/background-1.png" class="img1">
+        </div>  <!-- slider closing -->
+
+        <div class="slider fade">
+            <div class="txt">
+                <h1 class="bg-title">Kapenista</h1>
+                <p class="bg-sentence">All you need is coffee, wifi, and a dream.</p>
+            </div>  <!-- txt closing -->
+            <img src="/img/background11.png" class="img1">
+        </div>  <!-- slider closing -->
+
+
+        <div class="slider fade">
+            <div class="txt">
+                <h1 class="bg-title">Kapenista</h1>
+                <p class="bg-sentence">Before coffee, I’m a hot mess. After coffee? I’m a wide-awake hot mess!</p>
+            </div>  <!-- txt closing -->
+            <img src="/img/sample-image3.jpg" class="img1">
+    </div>  <!-- slider closing -->
+        <a class="prev" onclick="plusSlide(-1)">&#10094</a>
+        <a class="next" onclick="plusSlide(1)">&#10095</a>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div><!-- bg-slider closing -->
+
+
+    <div class="sticky-container">
+        <div class="container-content">
+            <div class="content-img">
+                <img src="/img/homepage-img.jpg">
+            </div>
+            
+
+            <div class="container-text">
+                <h1 class="container-title">Kapenista</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi asperiores non enim repellendus consectetur blanditiis quaerat. Minus dignissimos ipsa suscipit illum accusamus alias asperiores vero dolore neque tempore? Nemo animi quaerat hic est consequuntur distinctio non tenetur voluptatem recusandae amet eaque a voluptatum magnam iste, esse unde quia eligendi iure, corrupti doloremque ex facilis repellat exercitationem aspernatur? Praesentium, atque voluptates nisi quaerat temporibus rem! Omnis iste quos sed nobis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum quod facere unde blanditiis cumque perspiciatis eum. Distinctio deleniti repellendus, voluptatibus, aspernatur recusandae autem, porro enim veritatis in esse provident.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum quod facere unde blanditiis cumque perspiciatis eum. Distinctio deleniti repellendus, voluptatibus, aspernatur recusandae autem, porro enim veritatis in esse provident.</p>
+            
+                <div class="sub-title">
+                    <h2 class="sub-title">Menus</h2>
+                </div>
+                
+                <div class="images">
+                    <img src="/img/img2.png">
+                    <img src="/img/img3.png">
+                    <img src="/img/img4.png">
+                    <img src="/img/img5 (1).jpg">
+                    <img src="/img/img6.jpg">
+                    <img src="/img/img7.jpg">
+                </div>
+
+                <button class="shop-now" onclick="window.location.href='Shop.html';">order now</button>
+                
+            </div>
+
+           
+        </div>  
+    </div>
+
+    <!-- Para sa location ng coffee shop ikaw na gumawa pre tinamad ako banda dito hahaha -->
+    <div class="map">
+
+    </div>
+
+
+ 
+
+
+
+   
+
+    
+
+
+<!-- Code for footer -->
+<div class="footer">
+    <div class="footer-flex">
+        <div class="logo-container footer-logo-container"><a href="#home"><img src="/img/final-logo.png" class="logo footer-logo"></a></div>
+        <p>2023 Company name</p>
+        <div class="socmed-icons">
+            <a href="https://www.facebook.com/profile.php?id=100088998953007" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+    </div>
+    
+</div>
+
+    
+
+
+    
+    <!-- External file for JavaScript -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
